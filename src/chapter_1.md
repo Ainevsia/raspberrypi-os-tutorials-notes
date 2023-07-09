@@ -1,3 +1,5 @@
-# Chapter 1
+# Chapter 1 Wait Forever 笔记
 
-hi , mdbook, ainevsia
+> 一些额外的参考资料
+
+
