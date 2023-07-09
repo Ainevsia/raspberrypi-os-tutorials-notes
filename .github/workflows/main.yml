@@ -15,10 +15,8 @@ jobs:
       pull-requests: write  # To create a PR from that branch
     steps:
       - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      - run: (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.4" mdbook)
+      - name: Install latest mdbook
+        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.31/mdbook-v0.4.31-x86_64-unknown-linux-musl.tar.gz | tar -xz --directory=./mdbook && echo `pwd`/mdbook >> $GITHUB_PATH
       - run: mdbook build && mdbook test # In case of custom book path: mdbook build path/to/mybook && mdbook test path/to/mybook
       - uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
