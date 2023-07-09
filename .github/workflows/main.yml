@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install latest mdbook
-        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.31/mdbook-v0.4.31-x86_64-unknown-linux-musl.tar.gz | tar -xz --directory=./mdbook && echo `pwd`/mdbook >> $GITHUB_PATH
+        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.31/mdbook-v0.4.31-x86_64-unknown-linux-musl.tar.gz | tar -xz && echo `pwd` >> $GITHUB_PATH
       - run: mdbook build && mdbook test # In case of custom book path: mdbook build path/to/mybook && mdbook test path/to/mybook
       - uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
