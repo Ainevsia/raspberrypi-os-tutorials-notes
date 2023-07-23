@@ -104,3 +104,20 @@ unsigned int gpio_call(unsigned int pin_number, unsigned int value, unsigned int
 
 ## UARTS PL011
 - https://soclabs.org/technology/pl011-uart
+
+## kernel 
+- https://github.com/raspberrypi/linux
+- https://www.youtube.com/watch?v=hSJWbmiQfck
+
+## mailbox
+
+- https://blog.csdn.net/suz_cheney/article/details/86027172
+- https://cloud.tencent.com/developer/article/1667351
+- https://github.com/raspberrypi/firmware/wiki/Mailboxes
+- https://github.com/raspberrypi/firmware/wiki/Mailbox-property-interface
+- https://jsandler18.github.io/
+- https://willendless.github.io/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/2021/04/19/HDMI%E6%98%BE%E7%A4%BA%E5%B1%8F%E4%BD%9C%E5%9B%BE1/
+- https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials/issues/29
+- https://github.com/jewlexx/do-not-enter
+- http://cs107e.github.io/lectures/Framebuffer/slides.pdf
+- https://www.rpi4os.com/part5-framebuffer/
